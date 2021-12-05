@@ -1,0 +1,23 @@
+.info {
+  padding: 0 20px;
+  background-image: linear-gradient(-5deg, #f2f2f2 80%, #ffffff 80%);
+}
+
+.info__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.info__subtitle {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.info__text {
+  font-size: 14px;
+  line-height: 24px;
+}

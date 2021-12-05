@@ -1,0 +1,41 @@
+.button {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.button--white {
+  padding: 21px 38px;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 29px;
+}
+
+.button--green {
+  min-width: 276px;
+  padding: 23px 45px;
+  line-height: 30px;
+  color: #ffffff;
+  background-color: #2aab6d;
+  border: 2px solid #2aab6d;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.button--pink {
+  min-width: 280px;
+  padding: 21px 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #d22856;
+  border: 3px solid #d22856;
+  border-radius: 30px;
+}
+
+.button--disabled {
+  color: $color-base;
+  opacity: 0.1;
+  border: 3px solid $color-base;
+}

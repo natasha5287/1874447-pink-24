@@ -1,0 +1,23 @@
+.card {
+  background-color: #f2f2f2;
+}
+
+.card__author {
+  font-style: normal;
+  font-weight: 700;
+}
+
+.card__time {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.card__text {
+  margin: 0;
+}
+
+.card__like {
+  font-size: 12px;
+  color: #d22856;
+}

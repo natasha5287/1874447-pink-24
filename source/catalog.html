@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body class="page__body">
@@ -11,7 +12,7 @@
 
     <header class="header">
     <div class="header__wrapper">
-      <a class="logo" href="#">
+      <a class="logo" href="index.html">
         <img class="logo__img" src="/source/img/logo-pink.svg" width="74" height="23" alt="Логотип Пинк">
       </a>
 
@@ -39,8 +40,9 @@
 
     <main class="main">
       <h1 class="visually-hidden">Пинк - социальная сеть для обмена фотографиями</h1>
-
-      <h2>Фотографии пользователей</h2>
+      <div class="intro">
+        <h2 class=" intro-inner__title title title--form">Фотографии пользователей</h2>
+      </div>
 
       <section class="photo">
 
@@ -52,7 +54,7 @@
           <ul class="photo__list">
             <li class="photo__item card">
               <div class="card__photo">
-                <img width="320" height="137" src="/source/img/panorama-tablet.jpg" alt="Подвесной мост в горах.">
+                <img width="320" height="137" src="/img/panorama-tablet.jpg" alt="Подвесной мост в горах.">
               </div>
               <p><cite class="card__author">Анна</cite>
                 <span class="card__time">(5 минут назад)</span>
@@ -62,7 +64,7 @@
             </li>
             <li class="photo__item card">
               <div class="card__photo">
-                <img width="280" height="180" src="/source/img/photo-1-mobile.jpg" alt="Фотокамера направленная на белый автомобиль.">
+                <img width="280" height="180" src="/img/photo-1-mobile.jpg" alt="Фотокамера направленная на белый автомобиль.">
               </div>
               <p><cite class="card__author">Левон</cite>
                 <span class="card__time">(5 часов назад)</span>
@@ -72,7 +74,7 @@
             </li>
             <li class="photo__item card">
               <div class="card__photo">
-                <img width="280" height="180" src="/source/img/photo-2-mobile.jpg" alt="ударная установка">
+                <img width="280" height="180" src="/img/photo-2-mobile.jpg" alt="ударная установка">
               </div>
               <p><cite class="card__author">Антон</cite>
                 <span class="card__time">(12 часов назад)</span>
@@ -82,7 +84,7 @@
             </li>
             <li class="photo__item card">
               <div class="card__photo">
-                <img width="280" height="180" src="/source/img/photo-3-tablet.jpg" alt="вид снизу на высотное здание">
+                <img width="280" height="180" src="/img/photo-3-tablet.jpg" alt="вид снизу на высотное здание">
               </div>
               <p><cite class="card__author">Борис</cite>
                 <span class="card__time">(20 часов назад)</span>
@@ -92,7 +94,7 @@
             </li>
             <li class="photo__item card">
               <div class="card__photo">
-                <img width="280" height="180" src="/source/img/photo-4-tablet.jpg" alt="Кубанская ярмарка">
+                <img width="280" height="180" src="/img/photo-4-tablet.jpg" alt="Кубанская ярмарка">
               </div>
               <p><cite class="card__author">Сергей</cite>
                 <span class="card__time">(25 часов назад)</span>
@@ -102,7 +104,7 @@
             </li>
             <li class="photo__item card">
               <div class="card__photo">
-                <img  width="280" height="180" src="/source/img/photo-5-tablet.jpg" alt="фотография ног на фоне гор.">
+                <img  width="280" height="180" src="/img/photo-5-tablet.jpg" alt="фотография ног на фоне гор.">
               </div>
               <p><cite class="card__author">Максим</cite>
                 <span class="card__time">(40 часов назад)</span>
@@ -112,7 +114,7 @@
             </li>
             <li class="photo__item card">
               <div class="card__photo">
-                <img width="280" height="180" src="/source/img/photo-6-tablet.jpg" alt="крыло самолета">
+                <img width="280" height="180" src="/img/photo-6-tablet.jpg" alt="крыло самолета">
               </div>
               <p><cite class="card__author">Надежда</cite>
                 <span class="card__time">(45 часов назад)</span>
@@ -130,25 +132,27 @@
         <p class="new-post__text">Затмите их всех!
           Выкладывайте все, что накопилось в телефоне!</p>
 
-          <div class="new-post__photo">
-            <img width="280" height="374" src="/source/img/photo-7-tablet.jpg" alt="зимний пейзаж">
-          </div>
-          <div class="new-post__form">
-            <form class="new-post__form " action="https://echo.htmlacademy.ru/" method="post">
-              <label class="new-post__label label">
-                <input class="new-post__range range" type="range" name="edit" min="0" max="100" step="1">
-              </label>
-              <label class="new-post__label label">
-                <input class="new-post__range range" type="range" name="edit" min="0" max="100" step="1">
-              </label>
-              <label class="new-post__label label">
-                <input class="new-post__range range" type="range" name="edit" min="0" max="100" step="1">
-              </label>
-            </form>
-          </div>
-          <div class="new-post__control">
-            <button class="button" type="submit">Запостить</button>
-            <button class="button" type="reset">Отмена</button>
+          <div class="new-post__wrapper">
+            <div class="new-post__photo">
+              <img width="280" height="374" src="/img/photo-7-tablet.jpg" alt="зимний пейзаж">
+            </div>
+            <div class="new-post__form">
+              <form class="new-post__form " action="https://echo.htmlacademy.ru/" method="post">
+                <label class="new-post__label label">
+                  <input class="new-post__range range" type="range" name="edit" min="0" max="100" step="1">
+                </label>
+                <label class="new-post__label label">
+                  <input class="new-post__range range" type="range" name="edit" min="0" max="100" step="1">
+                </label>
+                <label class="new-post__label label">
+                  <input class="new-post__range range" type="range" name="edit" min="0" max="100" step="1">
+                </label>
+              </form>
+            </div>
+            <div class="new-post__control">
+              <button class="button button--pink" type="submit">Запостить</button>
+              <button class="button button--pink button--disabled" type="reset" disabled>Отмена</button>
+            </div>
           </div>
       </section>
 
@@ -175,7 +179,7 @@
     <div class="footer__copyright copyright">
       <span class="copyright__text">Разработано</span>
       <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+        <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#D22856" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
       </a>
     </div>
     </footer>

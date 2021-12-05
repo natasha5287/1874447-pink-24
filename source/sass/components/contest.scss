@@ -1,0 +1,35 @@
+.contest__text {
+  font-size: 14px;
+}
+
+.contest__title {
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.contest__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contest__wrap {
+  background-color: #f2f2f2;
+}
+
+.contest__comment {
+  font-family: "Open Sans", "Aria", sans-serif;
+  font-size: 18px;
+  color: $color-base;
+}
+
+.contest__note {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.contest__note--remark {
+  color: #d22856;
+}
