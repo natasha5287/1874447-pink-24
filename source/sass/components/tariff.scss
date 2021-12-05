@@ -1,0 +1,31 @@
+.tariff {
+  background-image: linear-gradient(-5deg, #f2f2f2 80%, #ffffff 80%);
+}
+
+.tariff__cell {
+  background-color: #ffffff;
+}
+
+.tariff__cell--header {
+  color: #ffffff;
+  background-color: $color-base;
+}
+
+.tariff__cell--header:first-child {
+  border-radius: 1px 0 0 0;
+}
+
+.tariff__cell--name {
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.tariff__cell--price {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.tariff__cell--option {
+  font-size: 14px;
+}
