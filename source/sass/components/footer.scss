@@ -1,0 +1,19 @@
+.footer__wrapper {
+  outline: 2px solid rgb(24, 179, 32);
+  outline-offset: -2px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    padding: 0 130px;
+  }
+}

@@ -1,0 +1,79 @@
+.effect {
+  outline: 2px solid rgb(24, 179, 32);
+  outline-offset: -2px;
+  position: relative;
+  display: none;
+  margin: 0 auto;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    width: 238px;
+    height: 276px;
+    background-image: url("/img/effect.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding: 100px 20px 140px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    padding: 100px 130px 140px;
+  }
+}
+
+.effect__box {
+  outline: 2px solid rgb(24, 179, 32);
+  outline-offset: -2px;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  width: 50%;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 60%;
+  }
+}
+
+.effect__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  margin: 0;
+  color: #000000;
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+  }
+}
+
+.effect__text {
+  margin: 0;
+  padding: 0;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.effect__link {
+  line-height: 24px;
+  color: #d22856;
+  text-decoration: underline;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
