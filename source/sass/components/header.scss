@@ -1,10 +1,22 @@
 .header {
   background-color: rgba(0, 0, 0, 0.3);
   color: #ffffff;
-
-  outline: 1px solid #e93c3c;
 }
 
 .header__wrapper {
-  padding: 0 20px;
+  outline: 2px solid rgb(24, 179, 32);
+  outline-offset: -2px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 21px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 43px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    padding: 43px 130px;
+  }
 }
