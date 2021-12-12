@@ -31,12 +31,14 @@
 .tariff__cell--name {
   font-weight: 700;
   font-size: 16px;
+  background-color: $color-base;
   text-transform: uppercase;
 }
 
 .tariff__cell--price {
   font-weight: 300;
   font-size: 18px;
+  background-color: $color-base;
 }
 
 .tariff__cell--option {
