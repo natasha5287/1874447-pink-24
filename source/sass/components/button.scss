@@ -1,4 +1,5 @@
 .button {
+  font-family: "Open Sans", "Arial", sans-serif;
   display: inline-block;
   font-weight: bold;
   font-size: 18px;
@@ -30,8 +31,7 @@
 }
 
 .button--pink {
-  min-width: 280px;
-  padding: 21px 0;
+  padding: 15px 0;
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;

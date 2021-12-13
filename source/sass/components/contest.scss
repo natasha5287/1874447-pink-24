@@ -1,25 +1,138 @@
+.contest {
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
+}
+
 .contest__text {
-  font-size: 14px;
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}
+
+.contest__form {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+}
+
+.contest__fieldset {
+  padding: 0 20px;
+  border: none;
+}
+
+.contest__fieldset--name {
+  @media (min-width: $tablet-width) {
+    order: -3;
+  }
+}
+
+.contest__fieldset--contacts {
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+}
+
+.contest__fieldset--comment {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
+}
+
+.contest__group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.contest__group--contacts {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.contest__field {
+  flex-grow: 1;
 }
 
 .contest__title {
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
+  text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    line-height: 30px;
+  }
+}
+
+.contest__title--visible {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
 .contest__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .contest__wrap {
   background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    background-color: inherit;
+  }
+}
+
+.contest__wrap--app {
+  @media (min-width: $tablet-width) {
+    order: -2;
+  }
+}
+
+.contest__wrap--progress {
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .contest__comment {
+  width: 100%;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 18px;
   color: $color-base;
@@ -27,7 +140,24 @@
 
 .contest__note {
   font-size: 14px;
+  text-align: center;
   text-transform: uppercase;
+}
+
+.contest__submit {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .contest__note--remark {

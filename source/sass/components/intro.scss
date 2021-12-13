@@ -115,3 +115,12 @@
     width: 300px;
   }
 }
+
+.intro-inner__title {
+  padding: 0 20px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
+}
