@@ -1,5 +1,5 @@
 .title {
-  margin: 0;
+  margin: 0 auto;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
@@ -12,19 +12,6 @@
   @media (min-width: $desktop-width) {
     font-size: 50px;
     line-height: 68px;
-  }
-}
-
-.title--form {
-  line-height: 33px;
-
-  @media (min-width: $tablet-width) {
-    font-size: 50px;
-    line-height: 68px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 200px;
   }
 }
 
