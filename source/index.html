@@ -141,7 +141,7 @@
         <h2 class="visually-hidden">Тарифы</h2>
         <div class="tariff__wrapper slider">
           <table class="tariff__table">
-              <tr class="tariff__row--header">
+              <tr class="tariff__header">
                 <th class="tariff__cell tariff__cell--empty"></th>
                 <th class="tariff__cell tariff__cell--header"><p class="tariff__cell tariff__cell--name">База</p><span class="tariff__cell tariff__cell--price">1,99 USD</span></th>
                 <th class="tariff__cell tariff__cell--header"><p class="tariff__cell tariff__cell--name">Стандарт</p><span class="tariff__cell tariff__cell--price">3,99 USD</span></th>
@@ -238,23 +238,6 @@
       </div>
     </footer>
 
-
-    <script>
-      var navMain = document.querySelector('.nav');
-      var navToggle = document.querySelector('.nav__toggle');
-
-      navMain.classList.remove('nav--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('nav--closed')) {
-          navMain.classList.remove('nav--closed');
-          navMain.classList.add('nav--opened');
-        } else {
-          navMain.classList.add('nav--closed');
-          navMain.classList.remove('nav--opened');
-        }
-      });
-    </script>
-
+    <script src="js/javascript.js"></script>
   </body>
 </html>
