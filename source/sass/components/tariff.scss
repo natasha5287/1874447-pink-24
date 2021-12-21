@@ -1,46 +1,148 @@
 .tariff {
-  background-image: linear-gradient(-5deg, #f2f2f2 80%, #ffffff 80%);
+  background-image: linear-gradient(356deg, #f2f2f2 80%, #ffffff 80%);
   overflow: hidden;
-}
 
-.tariff__wrapper {
-  outline: 2px solid rgb(24, 179, 32);
-  outline-offset: -2px;
-  margin: 0 auto;
-  padding: 0 20px;
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(356deg, #f2f2f2 87%, #ffffff 87%);
+  }
 
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
-    padding: 0 130px;
+    background-image: linear-gradient(355deg, #f2f2f2 86%, #ffffff 86%);
   }
 }
 
+.tariff__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 98px;
+    padding-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    padding: 160px 130px 53px;
+  }
+}
+
+.tariff__table {
+  width: 100%;
+  margin-bottom: 45px;
+  border-collapse: collapse;
+}
+
 .tariff__cell {
+  position: relative;
+  min-width: 152px;
   background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 234px;
+  }
+}
+
+.tariff__cell--yes::before {
+  width: 31px;
+  height: 21px;
+  background-image: url("/img/yes.svg");
+}
+
+.tariff__cell--no::before {
+  width: 27px;
+  height: 27px;
+  background-image: url("/img/no.svg");
+}
+
+.tariff__row .tariff__cell {
+  border: 2px solid #e5e5e5;
+}
+
+.tariff__cell--empty {
+  background-color: transparent;
 }
 
 .tariff__cell--header {
+  padding: 15px 0;
+  line-height: 18px;
   color: #ffffff;
   background-color: $color-base;
+  border: 2px solid $color-base;
+
+  @media (min-width: $desktop-width) {
+    line-height: 30px;
+  }
+}
+
+.tariff__cell--header:not(:last-child) {
+  border-right: 2px solid #f2f2f2;
 }
 
 .tariff__cell--header:first-child {
-  border-radius: 1px 0 0 0;
+  border-radius: 2px 0 0 0;
 }
 
 .tariff__cell--name {
+  margin: 0;
+  margin-bottom: 8px;
   font-weight: 700;
   font-size: 16px;
   background-color: $color-base;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    font-size: 18px;
+    text-align: center;
+  }
 }
 
 .tariff__cell--price {
   font-weight: 300;
   font-size: 18px;
   background-color: $color-base;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
 }
 
 .tariff__cell--option {
   font-size: 14px;
+  padding: 8px 10px 7px 15px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 155px;
+    padding: 8px 10px 7px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 234px;
+    font-size: 18px;
+    padding: 14px 15px 15px 22px;
+  }
+}
+
+.tariff__toggles {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

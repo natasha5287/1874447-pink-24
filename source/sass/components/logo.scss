@@ -1,0 +1,17 @@
+.logo {
+  position: relative;
+}
+
+.logo::before {
+  position: absolute;
+  content: "";
+  width: 59px;
+  height: 40px;
+  background-repeat: no-repeat;
+}
+
+.logo--footer::before {
+  bottom: 15px;
+  left: 0;
+  background-image: url("/img/glasses.svg");
+}
