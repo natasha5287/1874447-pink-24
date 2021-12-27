@@ -56,3 +56,18 @@
     }
   }
 }
+
+.header__img--tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    top: 27px;
+    left: 0;
+
+    path {
+      fill: #ffffff;
+    }
+  }
+}

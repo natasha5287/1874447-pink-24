@@ -1,9 +1,15 @@
 .intro {
+  min-height: 237px;
   color: #ffffff;
   background: $color-base url("/img/back-mobile.jpg") no-repeat;
   background-size: 100%;
 
+  @media (min-width: $tablet-width) {
+    min-height: 440px;
+  }
+
   @media (min-width: $desktop-width) {
+    min-height: 394px;
     display: flex;
   }
 }
@@ -26,6 +32,7 @@
 }
 
 .intro__title {
+  line-height: 29px;
   text-align: center;
   padding: 89px 20px 30px;
 
@@ -147,17 +154,25 @@
 }
 
 .intro__inner {
-  padding: 0 20px;
+  padding: 94px 20px 44px;
   line-height: 33px;
   text-align: center;
 
+  &.title {
+    line-height: 33px;
+  }
+
   @media (min-width: $tablet-width) {
-    font-size: 50px;
-    line-height: 68px;
+    padding: 176px 93px 60px;
+
+    &.title {
+      font-size: 50px;
+      line-height: 68px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 130px;
+    padding: 170px 220px 88px;
     max-width: 1200px;
   }
 }

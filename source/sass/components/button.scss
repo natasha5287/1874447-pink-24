@@ -4,11 +4,15 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 18px;
-  min-width: 280px;
+  // min-width: 280px;
+  padding: 15px 5px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .button--white {
-  padding: 15px 5px;
   color: #ffffff;
   text-align: center;
   border: 3px solid #ffffff;
@@ -24,34 +28,88 @@
     background-color: #ffffff;
   }
 
-  @media (min-width: $tablet-width) {
-    width: 300px;
-  }
-
   @media (min-width: $desktop-width) {
     font-size: 21px;
   }
 }
 
 .button--green {
-  min-width: 276px;
-  padding: 23px 45px;
+  min-width: 280px;
   line-height: 30px;
   color: #ffffff;
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
   border-radius: 3px;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #1c9b5e;
+    border-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--pink {
+  margin-bottom: 10px;
   padding: 15px 0;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 18px;
+  background-color: #f2f2f2;
   color: #d22856;
   border: 3px solid #d22856;
   border-radius: 30px;
+
+  &:hover {
+    color: #ffffff;
+    background-color: #d22856;
+  }
+
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 182px;
+  }
+}
+
+.button--grey {
+  color: $color-base;
+  background-color: #f2f2f2;
+  border: 3px solid $color-base;
+  border-radius: 30px;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: #ffffff;
+    background-color: $color-base;
+    opacity: 0.1;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 182px;
+  }
 }
 
 .button--disabled {

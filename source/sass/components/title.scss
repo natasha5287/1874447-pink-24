@@ -16,8 +16,18 @@
 }
 
 .title--modal {
+  margin-bottom: 25px;
+  padding-top: 38px;
   font-weight: bold;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 23px;
+    padding: 0 40px;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }

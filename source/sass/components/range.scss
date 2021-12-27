@@ -1,0 +1,30 @@
+.range {
+  width: 240px;
+  height: 2px;
+  background-color: $color-base;
+  appearance: none;
+
+  &::-webkit-slider-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #d22856;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  &::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2px solid #d22856;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 202px;
+  }
+}

@@ -1,22 +1,87 @@
 .card {
-  margin-bottom: 20px;
-  background-color: #f2f2f2;
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.card--main {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 130px 1fr 130px;
+  }
 }
 
 .card__img {
   display: block;
+  width: 100%;
+  background-color: #f2f2f2ff;
 }
 
-.card__discription {
-  padding: 0 17px;
+.card__photo--main {
+  position: relative;
+  grid-column: 1/-1;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
+  &::before {
+    position: absolute;
+    content: "панорама дня";
+    width: 140px;
+    height: 36px;
+    top: 0;
+    right: 20px;
+    padding: 6px 0;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #d22856;
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 54px;
+      right: 130px;
+    }
   }
 }
 
-.card__discription p {
-  margin: 0;
+.card__discription {
+  padding: 17px 0 18px 17px;
+  line-height: 24px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding: 22px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 24px 28px 20px;
+  }
+}
+
+.card__discription--main {
+  grid-column: 2/3;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 10px;
+  }
+
+  // @media (min-width: $desktop-width) {
+  //   padding: 24px 28px;
+  // }
 }
 
 .card__author {
@@ -32,9 +97,55 @@
 
 .card__text {
   margin: 0;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+    min-height: 47px;
+  }
+}
+
+.card__text--main {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
 }
 
 .card__like {
+  position: relative;
+  padding-left: 31px;
   font-size: 12px;
   color: #d22856;
+  text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background-image: url("/img/heart.svg");
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-left: 0;
+
+    &::before {
+      top: 5px;
+      right: 0;
+      left: auto;
+    }
+  }
+}
+
+.card__like--main {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-right: 29px;
+    text-align: right;
+  }
 }

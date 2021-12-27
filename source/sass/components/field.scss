@@ -1,6 +1,11 @@
 .field {
+  display: block;
   font-size: 18px;
+  line-height: 30px;
   color: $color-base;
+  padding: 14px 20px;
+  border: 2px solid #e5e5e5;
+  border-radius: 3px;
 
   &::-webkit-input-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -15,5 +20,15 @@
   &:-ms-input-placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
     color: $color-base;
+  }
+
+  &:hover {
+    border-color: $color-base;
+  }
+
+  &:focus,
+  &:active {
+    border-color: #d22856;
+    outline: none;
   }
 }
