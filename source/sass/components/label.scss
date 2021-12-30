@@ -1,4 +1,10 @@
 .label {
+  position: relative;
+  padding-left: 22px;
   color: #d22856;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
