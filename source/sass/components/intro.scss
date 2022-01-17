@@ -1,16 +1,33 @@
 .intro {
   min-height: 237px;
   color: #ffffff;
-  background: $color-base url("/img/back-mobile.jpg") no-repeat;
+  background-image: url("/img/back-mobile.jpg");
+  background-color: $color-base;
+  background-repeat: no-repeat;
   background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/back-mobile@2x.jpg");
+  }
+
 
   @media (min-width: $tablet-width) {
     min-height: 440px;
+    background-image: url("/img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/back-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 394px;
     display: flex;
+    background-image: url("/img/back-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/back-desktop@2x.jpg");
+    }
   }
 }
 
@@ -21,13 +38,13 @@
     display: grid;
     grid-template-columns: 20px 1fr 1fr 20px;
     grid-template-rows: auto auto;
-    padding: 110px 0 115px;
+    padding: 110px 0 0;
   }
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
     grid-template-columns: 130px 1fr 2fr 130px;
-    padding: 110px 0 125px;
+    padding: 110px 0 0;
   }
 }
 
@@ -40,6 +57,7 @@
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 84px;
+    margin-right: 10px;
     margin-bottom: 20px;
     padding: 10px 40px;
   }
@@ -54,15 +72,22 @@
 .intro__box {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    padding-top: 73px;
+    justify-content: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 98px;
+    padding-right: 4px;
+  }
 }
 
 .intro__img {
   display: block;
-
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    right: 0;
-  }
 }
 
 .intro__app {
@@ -76,7 +101,13 @@
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: transparent;
+    margin-right: 10px;
     padding: 0;
+    padding-bottom: 110px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 125px;
   }
 }
 

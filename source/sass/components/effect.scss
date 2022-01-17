@@ -20,7 +20,15 @@
     top: 56px;
     width: 238px;
     height: 276px;
-    background-image: url("/img/effect.svg");
+    background-image: url("/img/effect-tablet.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $desktop-width) {
+      top: 28px;
+      width: 298px;
+      height: 345px;
+      background-image: url("/img/effect-desktop.svg");
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -37,8 +45,6 @@
 }
 
 .effect__box {
-  outline: 2px solid rgb(24, 179, 32);
-  outline-offset: -2px;
   display: flex;
   flex-direction: column;
   margin-left: auto;
