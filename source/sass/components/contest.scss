@@ -60,6 +60,24 @@
   margin-bottom: 45px;
 }
 
+.contest__item--beach {
+  @media (min-width: $desktop-width) {
+    order: 1;
+  }
+}
+
+.contest__item--souvenirs {
+  @media (min-width: $desktop-width) {
+    order: 2;
+  }
+}
+
+.contest__item--hotel {
+  @media (min-width: $desktop-width) {
+    order: 3;
+  }
+}
+
 .contest__label {
   margin-bottom: 5px;
 
@@ -213,10 +231,10 @@
 .contest__list--progress {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 313px 296px 1fr;
     padding-top: 45px;
     padding-right: 0;
-    padding-bottom: 45px;
+    padding-bottom: 8px;
     padding-left: 60px;
   }
 }

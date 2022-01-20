@@ -1,32 +1,32 @@
 .intro {
   min-height: 237px;
   color: #ffffff;
-  background-image: url("/img/back-mobile.jpg");
+  background-image: url("../img/back-mobile.jpg");
   background-color: $color-base;
   background-repeat: no-repeat;
   background-size: 100%;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/back-mobile@2x.jpg");
+    background-image: url("../img/back-mobile@2x.jpg");
   }
 
 
   @media (min-width: $tablet-width) {
     min-height: 440px;
-    background-image: url("/img/back-tablet.jpg");
+    background-image: url("../img/back-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/back-tablet@2x.jpg");
+      background-image: url("../img/back-tablet@2x.jpg");
     }
   }
 
   @media (min-width: $desktop-width) {
     min-height: 394px;
     display: flex;
-    background-image: url("/img/back-desktop.jpg");
+    background-image: url("../img/back-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/back-desktop@2x.jpg");
+      background-image: url("../img/back-desktop@2x.jpg");
     }
   }
 }
@@ -155,15 +155,15 @@
   height: 56px;
 
   &--apple {
-    background: no-repeat url("/img/apple-logo.svg") bottom;
+    background: no-repeat url("../img/apple-logo.svg") bottom;
   }
 
   &--android {
-    background: no-repeat url("/img/android-logo.svg") bottom;
+    background: no-repeat url("../img/android-logo.svg") bottom;
   }
 
   &--microsoft {
-    background: no-repeat url("/img/microsoft-logo.svg") bottom;
+    background: no-repeat url("../img/microsoft-logo.svg") bottom;
   }
 }
 

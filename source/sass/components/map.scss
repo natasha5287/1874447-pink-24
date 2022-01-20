@@ -1,10 +1,29 @@
 .map {
+  position: relative;
   width: 100%;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 34px;
+    clip-path: polygon(100% 0, 50% 100%, 0 0);
+    background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 104px;
+    }
+  }
 }
 
 .map__item {
   display: block;
   width: 100%;
+  height: 200px;
 
   @media (min-width: $tablet-width) {
     height: 374px;

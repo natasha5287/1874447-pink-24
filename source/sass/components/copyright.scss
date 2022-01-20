@@ -15,16 +15,17 @@
 
 .copyright__link {
   display: block;
+  fill: #d22856;
 
-  &:hover {
-    path {
-      fill: $color-base;
-    }
+  &:hover .copyright__link-icon {
+    fill: $color-base;
   }
 
-  &:active {
-    path {
-      fill: rgba(40, 54, 69, 0.3);
-    }
+  &:active .copyright__link-icon {
+    fill: rgba(40, 54, 69, 0.3);
   }
+}
+
+.copyright__link-icon {
+  vertical-align: middle;
 }

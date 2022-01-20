@@ -12,6 +12,10 @@
     border: 2px solid #d22856;
     appearance: none;
     cursor: pointer;
+
+    &:active {
+      background: #d22856;
+    }
   }
 
   &::-moz-range-thumb {
@@ -22,6 +26,10 @@
     border: 2px solid #d22856;
     appearance: none;
     cursor: pointer;
+
+    &:active {
+      background: #d22856;
+    }
   }
 
   @media (min-width: $tablet-width) {

@@ -40,10 +40,6 @@
   padding-top: 22px;
   padding-bottom: 21px;
 
-  @media (min-width: $tablet-width) {
-    padding: 44px 0 43px 72px;
-  }
-
   &:hover {
     path {
       fill: #d22856;
@@ -55,19 +51,30 @@
       fill: rgba(255, 255, 255, 0.3);
     }
   }
-}
-
-.header__img--tablet {
-  display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
-    position: absolute;
-    top: 27px;
-    left: 0;
+    padding-top: 27px;
+  }
+}
 
-    path {
-      fill: #ffffff;
-    }
+.header__logo-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__logo-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    display: block;
+  }
+}
+
+.header__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
