@@ -64,6 +64,41 @@
   }
 }
 
+.new-post__icon {
+  fill: #283645;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: #d22856;
+    opacity: 1;
+  }
+}
+
+.new-post__icon--crop {
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+.new-post__icon--fill {
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    width: 24px;
+    height: 22px;
+  }
+}
+
+.new-post__icon--contrast {
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
 .new-post__control {
   display: flex;
   flex-direction: column;

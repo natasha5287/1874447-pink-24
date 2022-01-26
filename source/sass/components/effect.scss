@@ -20,38 +20,34 @@
     top: 56px;
     width: 238px;
     height: 276px;
-    background-image: url("/img/effect-tablet.svg");
+    background-image: url("../img/effect-tablet.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $desktop-width) {
       top: 28px;
       width: 298px;
       height: 345px;
-      background-image: url("/img/effect-desktop.svg");
+      background-image: url("../img/effect-desktop.svg");
     }
   }
 
   @media (min-width: $tablet-width) {
     padding: 97px 20px 80px;
-    margin-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: $desktop-width;
     margin-bottom: 65px;
-    padding: 123px 130px 115px;
+    padding: 123px 130px 110px;
     background-color: #f2f2f2;
   }
 }
 
 .effect__box {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  width: 50%;
+  padding-left: 310px;
 
   @media (min-width: $desktop-width) {
-    width: 534px;
+    padding-left: 370px;
     margin-right: 35px;
   }
 }
@@ -82,7 +78,7 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {

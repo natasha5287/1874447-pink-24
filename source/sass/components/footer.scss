@@ -1,5 +1,5 @@
 .footer__wrapper {
-  margin: 50px auto;
+  margin: 35px auto;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
@@ -21,26 +21,46 @@
 .footer__logo {
   margin-bottom: 25px;
   padding: 5px;
-  padding-left: 71px;
-
 
   &:hover {
-    path {
+    g {
       fill: #d22856;
     }
   }
 
   &:active {
-    path {
+    g {
       fill: $color-base;
+    }
+
+    .footer__glasses {
+      fill: #d22856;
     }
     opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 13px;
     margin-bottom: 0;
     margin-right: auto;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: start;
+  }
+}
+
+.footer__logo-mobile {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.footer__logo-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 

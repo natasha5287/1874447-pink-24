@@ -30,7 +30,7 @@
   left: 7px;
   width: 22px;
   height: 16px;
-  background-image: url("/img/tick.svg");
+  background-image: url("../img/tick.svg");
 }
 
 .control__input[type="radio"]:checked + .mark::before {
