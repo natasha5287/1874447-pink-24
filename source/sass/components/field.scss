@@ -32,3 +32,21 @@
     outline: none;
   }
 }
+
+.field--phone {
+  @media (min-width: $tablet-width) {
+    padding-right: 65px;
+    background-image: url("../img/form-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+}
+
+.field--mail {
+  @media (min-width: $tablet-width) {
+    padding-right: 65px;
+    background-image: url("../img/form-mail.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+}

@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
 
   <body class="page__body">
@@ -81,6 +81,9 @@
           </div>
           <div class="intro__box">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="./img/content/phone-pink-desktop.webp 1x, ./img/content/phone-pink-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="./img/content/phone-pink-tablet.webp 1x, ./img/content/phone-pink-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/content/phone-pink-mobile.webp 1x, ./img/content/phone-pink-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="./img/content/phone-pink-desktop.png 1x, /img/content/phone-pink-desktop@2x.png 2x">
               <source media="(min-width: 660px)" srcset="./img/content/phone-pink-tablet.png 1x, /img/content/phone-pink-tablet@2x.png 2x">
               <img class="intro__img"  src="./img/content/phone-pink-mobile.png" srcset="/img/content/phone-pink-mobile@2x.png 2x" alt="Пример розового фильтра в приложении">
@@ -172,7 +175,7 @@
               <tr class="tariff__header">
                 <th class="tariff__cell tariff__cell--empty"></th>
                 <th class="tariff__cell tariff__cell--header"><p class="tariff__cell tariff__cell--name">База</p><span class="tariff__cell tariff__cell--price">1,99 USD</span></th>
-                <th class="tariff__cell tariff__cell--header"><p class="tariff__cell tariff__cell--name">Стандарт</p><span class="tariff__cell tariff__cell--price">3,99 USD</span></th>
+                <th class="tariff__cell tariff__cell--header tariff__cell--hit"><p class="tariff__cell tariff__cell--name">Стандарт</p><span class="tariff__cell tariff__cell--price">3,99 USD</span></th>
                 <th class="tariff__cell tariff__cell--header"><p class="tariff__cell tariff__cell--name">Анлим</p><span class="tariff__cell tariff__cell--price">9,99 USD</span></th>
               </tr>
             <tr class="tariff__row">
@@ -283,7 +286,7 @@
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__link-icon" width="27" height="34">
-              <use xlink:href="img/sprite.svg#icon-academy"></use>
+              <use xlink:href="img/sprite.svg#html-academy"></use>
             </svg>
           </a>
         </div>

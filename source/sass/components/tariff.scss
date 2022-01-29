@@ -96,6 +96,39 @@
   border-radius: 2px 0 0 0;
 }
 
+.tariff__cell--hit::before {
+  position: absolute;
+  content: "";
+  margin: 0;
+  top: -2px;
+  left: 0;
+  width: 74px;
+  height: 74px;
+  background-image: url("../img/hit.svg");
+  z-index: 1;
+
+  @media (min-width: $tablet-width) and (max-width: 1199px) {
+    width: 61px;
+    height: 61px;
+  }
+}
+
+.tariff__cell--hit::after {
+  position: absolute;
+  content: "хит";
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  top: 11px;
+  left: 0;
+  width: 27px;
+  height: 10px;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  z-index: 2;
+}
+
 .tariff__cell--name {
   margin: 0;
   margin-bottom: 8px;
