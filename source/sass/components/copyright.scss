@@ -15,10 +15,11 @@
 
 .copyright__link {
   display: block;
-  fill: #d22856;
 
   &:hover .copyright__link-icon {
-    fill: $color-base;
+    path {
+      fill: $color-base;
+    }
   }
 
   &:active .copyright__link-icon {
