@@ -60,7 +60,7 @@ const copyImages = () => {
 
 // WebP
 
-const createWebp = () => {
+export const createWebp = () => {
   return gulp.src('source/img/content/*.{png,jpg}')
   .pipe(squoosh({
     webp: {}
@@ -137,7 +137,7 @@ const watcher = () => {
 
 // Build
 
-const build = gulp.series(
+export const build = gulp.series(
   clean,
   copy,
   optimizeImages,
