@@ -17,9 +17,7 @@
   display: block;
 
   &:hover .copyright__link-icon {
-    path {
-      fill: $color-base;
-    }
+    fill: $color-base;
   }
 
   &:active .copyright__link-icon {
@@ -28,5 +26,6 @@
 }
 
 .copyright__link-icon {
+  fill: #d22856;
   vertical-align: middle;
 }

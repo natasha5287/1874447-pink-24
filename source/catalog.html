@@ -8,6 +8,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
   </head>
 
   <body class="page__body">
@@ -249,26 +250,31 @@
               </picture>
             </div>
             <form class="new-post__form " action="https://echo.htmlacademy.ru/" method="post">
-              <label class="new-post__label label">
+              <label class="new-post__label label" for="range-crop">
                 <button class="new-post__button" type="button">
-                  <svg class="new-post__icon new-post__icon--crop" width="44" height="44">
+                  <svg class="new-post__icon new-post__icon--crop" viewBox="0 0 44 44" width="44" height="44">
                     <use xlink:href="./img/sprite.svg#crop"></use>
                   </svg>
                 </button>
-                <input class="new-post__range range" type="range" name="edit" min="0" max="100" step="1">
+                <input class="new-post__range range" type="range" id="range-crop" name="edit" min="0" max="100" step="1">
               </label>
-              <label class="new-post__label label">
-                <svg class="new-post__icon new-post__icon--fill" width="48" height="43">
-                  <use xlink:href="img/sprite.svg#fill"></use>
-                </svg>
-                <input class="new-post__range range" type="range" name="edit" min="0" max="100" step="1">
+              <label class="new-post__label label" for="range-fill">
+                <button class="new-post__button" type="button">
+                  <svg class="new-post__icon new-post__icon--fill" viewBox="0 0 48 43" width="48" height="43">
+                    <use xlink:href="img/sprite.svg#fill"></use>
+                  </svg>
+                </button>
+                <input class="new-post__range range" type="range" id="range-fill" name="edit" min="0" max="100" step="1">
               </label>
-              <label class="new-post__label label">
-                <svg class="new-post__icon new-post__icon--contrast" width="32" height="32">
-                  <use xlink:href="img/sprite.svg#contrast"></use>
-                </svg>
-                <input class="new-post__range range" type="range" name="edit" min="0" max="100" step="1">
+              <label class="new-post__label label" for="range-contrast">
+                <button class="new-post__button" type="button">
+                  <svg class="new-post__icon new-post__icon--contrast" viewBox="0 0 32 32" width="32" height="32">
+                    <use xlink:href="img/sprite.svg#contrast"></use>
+                  </svg>
+                </button>
+                <input class="new-post__range range" type="range" id="range-contrast" name="edit" min="0" max="100" step="1">
               </label>
+
               <div class="new-post__control">
                 <button class="button button--pink" type="submit">Запостить</button>
                 <button class="button button--grey" type="reset">Отмена</button>
@@ -328,7 +334,7 @@
         <div class="footer__copyright copyright">
           <span class="copyright__text">Разработано</span>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__link-icon" width="27" height="34">
+            <svg class="copyright__link-icon" viewBox="0 0 27 34" width="27" height="34">
               <use xlink:href="img/sprite.svg#html-academy"></use>
             </svg>
           </a>
@@ -336,6 +342,6 @@
       </div>
     </footer>
 
-    <script src="js/javascript.js"></script>
+    <script src="js/javascript.min.js"></script>
   </body>
 </html>
