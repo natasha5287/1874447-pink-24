@@ -103,10 +103,12 @@
 
 a[class^="contacts__description"]:hover {
   color: $color-base;
+  text-decoration: underline;
 }
 
 a[class^="contacts__description"]:active {
   color: rgba(40, 54, 69, 0.3);
+  text-decoration: none;
 }
 
 .contacts__description--address {

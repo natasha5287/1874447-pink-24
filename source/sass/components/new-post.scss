@@ -64,8 +64,18 @@
   }
 }
 
+.new-post__label {
+  padding-left: 0;
+}
+
+.new-post__button {
+  padding: 5px;
+  border: none;
+  background-color: inherit;
+}
+
 .new-post__icon {
-  fill: #283645;
+  fill: #d22856;
 
   &:hover {
     opacity: 0.5;

@@ -81,7 +81,16 @@
   line-height: 18px;
   color: #ffffff;
   background-color: $color-base;
-  border: 2px solid $color-base;
+
+  @media (min-width: $tablet-width) {
+    &:nth-child(2) {
+      border-radius: 3px 0 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 3px 0 0;
+    }
+  }
 
   @media (min-width: $desktop-width) {
     line-height: 30px;
@@ -100,7 +109,7 @@
   position: absolute;
   content: "";
   margin: 0;
-  top: -2px;
+  top: 0;
   left: 0;
   width: 74px;
   height: 74px;
@@ -127,6 +136,11 @@
   text-transform: uppercase;
   transform: rotate(-45deg);
   z-index: 2;
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
+    left: 8px;
+  }
 }
 
 .tariff__cell--name {
