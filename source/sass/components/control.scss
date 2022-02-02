@@ -23,6 +23,10 @@
   border-color: #d22856;
 }
 
+.control__input[type="checkbox"]:checked:hover + .mark {
+  border-color: $color-base;
+}
+
 .control__input[type="checkbox"]:checked + .mark::before {
   position: absolute;
   content: "";

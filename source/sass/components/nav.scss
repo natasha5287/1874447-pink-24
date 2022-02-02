@@ -141,7 +141,11 @@
 }
 
 .nav--nojs .nav__toggle {
-  display: none;
+  display: block;
+}
+
+.nav--nojs .nav__list {
+  display: block;
 }
 
 .nav--opened .nav__toggle {
