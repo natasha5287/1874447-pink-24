@@ -36,7 +36,10 @@
 }
 
 .new-post__photo {
+  margin-bottom: 42px;
+
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     grid-column: 1/2;
   }
 
@@ -64,20 +67,124 @@
   }
 }
 
+.new-post__container {
+  margin-bottom: 73px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
+}
+
+.new-post__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.new-post__wrap {
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
 .new-post__label {
   padding-left: 0;
 }
 
+.new-post__range {
+  position: relative;
+  display: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 35px;
+    left: -20px;
+    width: 100vw;
+    height: 1px;
+    background-color: $color-base;
+    opacity: 0.1;
+
+    @media (min-width: $tablet-width) {
+      left: -50px;
+      width: 270px;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: -90px;
+      width: 410px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.new-post__range--active {
+  display: block;
+}
+
 .new-post__button {
-  padding: 5px;
+  width: 44px;
+  padding: 0;
   border: none;
   background-color: inherit;
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 45px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 28px;
+    margin-right: 10px;
+    padding: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 45px;
+    padding: 0;
+  }
 }
 
 .new-post__icon {
-  fill: #d22856;
+  fill: $color-base;
+  opacity: 0.3;
+
+  @media (min-width: $tablet-width) {
+    fill: #d22856;
+    opacity: 1;
+  }
 
   &:hover {
+    fill: $color-base;
     opacity: 0.5;
   }
 
@@ -88,6 +195,9 @@
 }
 
 .new-post__icon--crop {
+  fill: #d22856;
+  opacity: 1;
+
   @media (min-width: $tablet-width) and (max-width: 1199px) {
     width: 22px;
     height: 22px;

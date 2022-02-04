@@ -47,3 +47,7 @@
   background-color: #d22856;
   border-radius: 50%;
 }
+
+.control__input[type="radio"]:checked:hover + .mark {
+  border-color: $color-base;
+}
